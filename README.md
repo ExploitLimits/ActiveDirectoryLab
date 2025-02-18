@@ -9,12 +9,16 @@ This project documents my hands-on experience setting up a Windows Server 2019 l
 - **🎯 Objective**: Build a functional Windows domain environment and troubleshoot real-world issues
 
 ## 📝 Steps Taken
-1. 🔹 **Installed and Configured Windows Server 2019**
-2. 🔹 **Set Up Active Directory & DNS**
-3. 🔹 **Configured DHCP for Client Addressing**
-4. 🔹 **Enabled RAS/NAT for Internet Access**
-5. 🔹 **Connected a Windows 10 Client to the Domain**
-6. 🔹 **Tested Connectivity and Troubleshot Issues**
+1. 🔹 **Installed and Configured Oracle Virtual Box**
+2. 🔹 **Installed and Configured Windows Server 2019**
+3. 🔹 **Installed and Configured Windows 10 Client**
+4. 🔹 **Set Up Active Directory & DNS**
+5. 🔹 **Configured DHCP for Client Addressing**
+6. 🔹 **Enabled RAS/NAT for Internet Access**
+7. 🔹 **Installed and Configured Windows Server 2019**
+8. 🔹 **Utilized PowerShell to Create 1000+ Users in Active Directory**
+9. 🔹 **Connected a Windows 10 Client to the Domain**
+10. 🔹 **Tested Connectivity and Troubleshot Issues**
 
 ## ⚠️ Challenges & Troubleshooting
 Throughout the setup, I encountered several issues and resolved them as follows:
