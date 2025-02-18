@@ -1,58 +1,54 @@
-<h1>Active Directory Home Lab</h1>
+# 🖥️ Windows Server 2019 Lab Setup
 
- ### [YouTube Demonstration]([https://youtu.be/7eJexJVCqJo](https://www.youtube.com/watch?v=MHsI8hJmggI&list=PLqBeiU46hx1H--SNfTrohTOWeqkK-M2Y0))
+This project documents my hands-on experience setting up a Windows Server 2019 lab in VirtualBox, configuring Active Directory, DHCP, and RAS/NAT, and troubleshooting network connectivity issues.
 
-<h2>Description</h2>
-How to Setup a Basic Home Lab Running Active Directory (Oracle VirtualBox) | Add Users w/PowerShell
-<br />
+## 🚀 Project Overview
+- **🛠️ Virtualization Tool**: VirtualBox
+- **💻 Operating Systems**: Windows Server 2019, Windows 10
+- **🔧 Core Components**: Active Directory, DNS, DHCP, Routing & Remote Access (NAT)
+- **🎯 Objective**: Build a functional Windows domain environment and troubleshoot real-world issues
 
+## 📝 Steps Taken
+1. 🔹 **Installed and Configured Windows Server 2019**
+2. 🔹 **Set Up Active Directory & DNS**
+3. 🔹 **Configured DHCP for Client Addressing**
+4. 🔹 **Enabled RAS/NAT for Internet Access**
+5. 🔹 **Connected a Windows 10 Client to the Domain**
+6. 🔹 **Tested Connectivity and Troubleshot Issues**
 
-<h2>Languages and Utilities Used</h2>
+## ⚠️ Challenges & Troubleshooting
+Throughout the setup, I encountered several issues and resolved them as follows:
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+### ❌ Issue: Incorrect IP Address on Internal NIC
+**🔍 Problem**: The domain controller's internal NIC was assigned the wrong IP address, preventing clients from connecting properly.
+**✅ Solution**: Reconfigured the NIC with the correct static IP (172.16.0.1) and verified settings with `ipconfig /all`.
 
-<h2>Environments Used </h2>
+### ❌ Issue: Client Could Not Access the Internet
+**🔍 Problem**: The client could ping `8.8.8.8` but could not resolve domain names.
+**✅ Solution**: Fixed the DNS server configuration, ensuring the client used the DC's IP (172.16.0.1) as its primary DNS and set up DNS Forwarders to external resolvers.
 
-- <b>Windows 10</b> (21H2)
+### ❌ Issue: DHCP Scope Not Enumerating
+**🔍 Problem**: Running `Get-DhcpServerv4Scope` returned a permission error.
+**✅ Solution**: Adjusted permissions on the DHCP server role and restarted the service, then verified using `Get-DhcpServerv4Scope`.
 
-<h2>Program walk-through:</h2>
+## 📸 Screenshots
+To illustrate my setup and troubleshooting steps, I included:
+- 🖧 VirtualBox network settings
+- 📜 Windows Server IP configuration (`ipconfig /all`)
+- ⚙️ Active Directory & DHCP configurations
+- 🌍 Routing & Remote Access settings
+- ✅ Successful client connection to the domain
+- 🛠️ Troubleshooting commands and their outputs
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+## 📚 Lessons Learned
+- 🏗️ The importance of correctly configuring DNS for domain environments
+- 🔄 How to set up and troubleshoot DHCP and NAT for client connectivity
+- 🖥️ Using PowerShell for efficient server management and troubleshooting
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+## 🚀 Future Improvements
+- 🤖 Automating user creation with PowerShell scripts
+- 🔎 Expanding the lab to include a SIEM tool for security monitoring
+- 🏛️ Implementing Group Policy Objects (GPO) for policy enforcement
+
+---
+*This project showcases my problem-solving skills and foundational knowledge in Windows Server administration and networking.* 💡
