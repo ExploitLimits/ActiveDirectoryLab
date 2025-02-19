@@ -9,12 +9,15 @@ This project documents my hands-on experience setting up a Windows Server 2019 l
 - **🎯 Objective**: Build a functional Windows domain environment and troubleshoot real-world issues
 
 ## 📝 Steps Taken
-1. 🔹 **Installed and Configured Windows Server 2019**
-2. 🔹 **Set Up Active Directory & DNS**
-3. 🔹 **Configured DHCP for Client Addressing**
-4. 🔹 **Enabled RAS/NAT for Internet Access**
-5. 🔹 **Connected a Windows 10 Client to the Domain**
-6. 🔹 **Tested Connectivity and Troubleshot Issues**
+1. 🔹 **Installed and Configured Oracle Virtual Box**
+2. 🔹 **Installed and Configured Windows Server 2019**
+3. 🔹 **Set Up Active Directory & DNS**
+4. 🔹 **Configured DHCP for Client Addressing**
+5. 🔹 **Enabled RAS/NAT for Internet Access**
+6. 🔹 **Automating user creation with PowerShell scripts**
+7. 🔹 **Installed and Configured Windows Server 2019**
+8. 🔹 **Connected a Windows 10 Client to the Domain**
+9. 🔹 **Tested Connectivity and Troubleshot Issues**
 
 ## ⚠️ Challenges & Troubleshooting
 Throughout the setup, I encountered several issues and resolved them as follows:
@@ -46,9 +49,12 @@ To illustrate my setup and troubleshooting steps, I included:
 - 🖥️ Using PowerShell for efficient server management and troubleshooting
 
 ## 🚀 Future Improvements
-- 🤖 Automating user creation with PowerShell scripts
+- 🤖 More Complex Network Topology: Move beyond a simple flat network. Implement subnets, VLANs, routing, and firewalls to simulate a more realistic enterprise environment.
+- 🔥 Firewall Configuration: Set up and configure firewalls (Windows Firewall, or even virtualized pfSense or OPNsense) to control network traffic and practice security hardening.
 - 🔎 Expanding the lab to include a SIEM tool for security monitoring
 - 🏛️ Implementing Group Policy Objects (GPO) for policy enforcement
 
 ---
 *This project showcases my problem-solving skills and foundational knowledge in Windows Server administration and networking.* 💡
+
+
