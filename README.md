@@ -54,6 +54,9 @@ To illustrate my setup and troubleshooting steps, I included:
 - 🔎 Expanding the lab to include a SIEM tool for security monitoring
 - 🏛️ Implementing Group Policy Objects (GPO) for policy enforcement
 
+## 🚀 Project Walkthrough
+
+This is the main page for my project.  For the walkthrough, please see [Walkthrough](Walkthrough.md).
 ---
 *This project showcases my problem-solving skills and foundational knowledge in Windows Server administration and networking.* 💡
 
