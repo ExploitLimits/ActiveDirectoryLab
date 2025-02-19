@@ -11,7 +11,7 @@ The basic network setup will consist of two virtual machines:
 *   **Domain Controller (Server 2019):** This machine will host the Active Directory Domain Services. 🖥️
 *   **Client Machine (Windows 10):** This machine will be joined to the domain. 🗄️
 
-![AD Home Lab Diagram](img/AD Home Lab Diagram.png)
+![AD Home Lab Diagram](img/diagram.png)
 
 ## 2. Setting Up the Virtual Environment ⚙️
 
